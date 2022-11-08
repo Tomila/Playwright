@@ -29,6 +29,7 @@ test('Create account', async ({ page }) => {
   const url = await page.url();
   const text = await exampletest.searchButton();
   await exampletest.pressEnter();
+  exampletest.searchLuoTunnus();
 });
 test('Find 3rd kausi', async ({ page }) => {
   await page.goto('https://areena.yle.fi/1-3339547');

@@ -24,4 +24,8 @@ export class ExampleClass{
     async searchButton(){
         return this.page.innerText('//button[contains(text(),"Kirjaudu")]')
     }
+    async searchLuoTunnus(){
+        return this.page.innerText('//button[contains(text(),"Luo Yle Tunnus")]')
+
+    }
 }
