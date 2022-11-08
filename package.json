@@ -1,0 +1,23 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "Playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "testing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomila/Playwright.git"
+  },
+  "author": "TomiLa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tomila/Playwright/issues"
+  },
+  "homepage": "https://github.com/Tomila/Playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.27.1",
+    "playwright": "^1.27.1"
+  }
+}
