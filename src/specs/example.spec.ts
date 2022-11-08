@@ -29,8 +29,19 @@ test('Create account', async ({ page }) => {
   const url = await page.url();
   const text = await exampletest.searchButton();
   await exampletest.pressEnter();
-  exampletest.searchLuoTunnus();
+ // exampletest.searchLuoTunnus();
 });
+test('Email format', async ({ page }) => {
+  await page.goto('https://areena.yle.fi/tv');
+  let exampletest = new ExampleClass(page);
+  const url = await page.url();
+  const text = await exampletest.searchButton();
+  await exampletest.pressEnter();
+  exampletest.searchLuoTunnus();
+  await exampletest.pressEnter();
+  await exampletest.testEmailFormat();
+});
+
 test('Find 3rd kausi', async ({ page }) => {
   await page.goto('https://areena.yle.fi/1-3339547');
   let exampletest = new ExampleClass(page);

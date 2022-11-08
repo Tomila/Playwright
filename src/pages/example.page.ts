@@ -26,6 +26,8 @@ export class ExampleClass{
     }
     async searchLuoTunnus(){
         return this.page.innerText('//button[contains(text(),"Luo Yle Tunnus")]')
-
+    }
+    async testEmailFormat(){
+        
     }
 }
