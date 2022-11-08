@@ -23,9 +23,16 @@ test('Search Yle image', async ({ page }) => {
   const url = await page.url();
   const text = await exampletest.searchImg();
 });
+test('Create account', async ({ page }) => {
+  await page.goto('https://areena.yle.fi/tv');
+  let exampletest = new ExampleClass(page);
+  const url = await page.url();
+  const text = await exampletest.searchButton();
+  await exampletest.pressEnter();
+});
 test('Find 3rd kausi', async ({ page }) => {
   await page.goto('https://areena.yle.fi/1-3339547');
   let exampletest = new ExampleClass(page);
   const url = await page.url();
   const text = await exampletest.searchSeason();
-})
+});

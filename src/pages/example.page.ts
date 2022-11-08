@@ -18,6 +18,10 @@ export class ExampleClass{
         return this.page.url('//url[contains(https://images.cdn.yle.fi/image/upload/c_fill,f_auto,h_64,q_auto:eco/v1665568718/yle-tv1_vtc.png)]')
     }
     async searchSeason(){
-        return this.page.innerText('//aria-label[contains(text(),"Kausi 3")]')
+            return this.page.innerText('//aria-label[contains(value(),"2")]')
+        // return this.page.innerText('//aria-label[contains(text(),"Kausi")]')
+    }
+    async searchButton(){
+        return this.page.innerText('//button[contains(text(),"Kirjaudu")]')
     }
 }
